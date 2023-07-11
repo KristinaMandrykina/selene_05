@@ -8,7 +8,6 @@ from selene import browser, have, command
 def test_fill_out_and_submit_the_form(setup_browser):
     browser.open('/automation-practice-form')
 
-
     browser.element('#firstName').type('Alex')
     browser.element('#lastName').type('Bell')
     browser.element('#userEmail').type('alexbell@gmail.com')
@@ -35,6 +34,20 @@ def test_fill_out_and_submit_the_form(setup_browser):
     browser.element('#city').click()
     # browser.all("#city div").element_by(have.exact_text("Delhi")).click()
     browser.all('[id^=react-select][id*=option]').element_by(have.exact_text("Delhi")).click()
+    browser.element('#submit').click()
+    # browser.element('#submit').perform(command.js.click)
+    browser.element('[id=example-modal-sizes-title-lg]').should(have.text('Thanks for submitting the form'))
 
-
-
+    browser.element('.table').all('td').should(have.texts(
+        ('Student Name', 'Alex Bell'),
+        ('Student Email', 'alexbell@gmail.com'),
+        ('Gender', 'Male'),
+        ('Mobile', '89998889988'),
+        ('Date of Birth', '10 April,1992'),
+        ('Subjects', 'Computer Science'),
+        ('Hobbies', 'Sports'),
+        ('Picture', 'picture.jpg'),
+        ('Address', '110006 Kashmiri Gate'),
+        ('State and City', 'NCR Delhi'),
+    )
+    )

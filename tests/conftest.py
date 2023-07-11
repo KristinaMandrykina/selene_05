@@ -9,6 +9,7 @@ def setup_browser():
     browser.config.window_height = 1360
     #browser.config.timeout = 5.0
     #driver_options.add_argument("--disable-notifications")
+    browser.config.wait_for_no_overlap_found_by_js = True
    
     yield
 
