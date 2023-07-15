@@ -4,6 +4,7 @@ from selene import browser, have, command
 
 # Заполнение и отправка формы
 
+
 def test_fill_out_and_submit_the_form(setup_browser):
     browser.open('/automation-practice-form')
 
