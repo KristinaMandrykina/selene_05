@@ -13,7 +13,7 @@ def test_fill_out_and_submit_the_form(setup_browser):
     browser.element('#userEmail').type('alexbell@gmail.com')
     # browser.element('[name=gender][value=Male]+label').click()
     browser.all('#genterWrapper .custom-control').element_by(have.exact_text('Male')).click()
-    browser.element('#userNumber').type('89998889988')
+    browser.element('#userNumber').type('8999888998')
     browser.element('#dateOfBirthInput').click()
     # browser.element('.react-datepicker__month-select').click()
     # browser.element('.react-datepicker__month-select').element('option[value="3"]').click()
@@ -42,7 +42,7 @@ def test_fill_out_and_submit_the_form(setup_browser):
         ('Student Name', 'Alex Bell'),
         ('Student Email', 'alexbell@gmail.com'),
         ('Gender', 'Male'),
-        ('Mobile', '89998889988'),
+        ('Mobile', '8999888998'),
         ('Date of Birth', '10 April,1992'),
         ('Subjects', 'Computer Science'),
         ('Hobbies', 'Sports'),
