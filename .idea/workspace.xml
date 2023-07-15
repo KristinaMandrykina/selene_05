@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da80e97-7bf8-4ecf-9573-3fc9fe651acb" name="Changes" comment="дз 2" />
+    <list default="true" id="2da80e97-7bf8-4ecf-9573-3fc9fe651acb" name="Changes" comment="исправлен номер телефона" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,12 +104,20 @@
       <option name="project" value="LOCAL" />
       <updated>1689070384287</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="исправлен номер телефона">
+      <created>1689414797031</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689414797031</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="дз" />
     <MESSAGE value="дз 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="дз 2" />
+    <MESSAGE value="исправлен номер телефона" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправлен номер телефона" />
   </component>
 </project>
